@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field } from 'redux-form';
+import PropTypes from 'prop-types';
 
 export default class FancySelect extends React.PureComponent {
 	render() {
@@ -28,3 +29,10 @@ export default class FancySelect extends React.PureComponent {
 		)
 	}
 }
+
+FancySelect.propTypes = {
+	name: PropTypes.string,
+	title: PropTypes.string,
+	comment: PropTypes.string,
+	options: PropTypes.array
+};

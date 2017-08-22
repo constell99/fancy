@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class NavItem extends React.PureComponent {
 	render() {
@@ -19,4 +20,12 @@ export default class NavItem extends React.PureComponent {
 			</li>
 		)
 	}	
+}
+
+NavItem.propTypes = { 
+	id: PropTypes.string,
+	icoName: PropTypes.string,
+	// https://github.com/facebook/prop-types/issues/76
+	// onClick: PropTypes.func,
+	active: PropTypes.bool
 }

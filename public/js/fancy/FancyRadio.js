@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field } from 'redux-form';
+import PropTypes from 'prop-types';
 
 export default class FancyRadio extends React.PureComponent {
 	render() {
@@ -18,7 +19,8 @@ export default class FancyRadio extends React.PureComponent {
 					options.map((v, i) => {
 						const klassName = i === 0 ? 'first-item': '';
 						return (
-							<span className={ "preference-item__input__subject__radio " + klassName }>
+							<span className={ "preference-item__input__subject__radio " + klassName }
+								key={ name + v.value }>
 								<Field component="input"
 									type="radio"
 									name={ name }
@@ -32,4 +34,11 @@ export default class FancyRadio extends React.PureComponent {
 			</div>
 		)
 	}
+}
+
+FancyRadio.propTypes = {
+	name: PropTypes.string,
+	title: PropTypes.string,
+	desc: PropTypes.string,
+	options: PropTypes.array
 }

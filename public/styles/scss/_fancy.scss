@@ -1,0 +1,13 @@
+@import '~normalize-scss/sass/_normalize.scss';
+@import '~bourbon/app/assets/stylesheets/_bourbon.scss';
+
+@import 'fancy/fonts';
+@import 'fancy/common';
+@import 'fancy/sugar';
+@import 'fancy/reset';
+@import 'fancy/variables';
+
+@import 'fancy/header';
+@import 'fancy/main';
+@import 'fancy/sidemenu';
+@import 'fancy/contents';

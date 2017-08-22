@@ -1,0 +1,6 @@
+.main {
+	@include clearfix;
+	@include margin(12px auto null auto);
+	width: 1020px;
+	margin-top: 12px;
+}

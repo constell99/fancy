@@ -1,0 +1,68 @@
+header {
+	background-color: #fff;
+	text-align: center;
+	border-bottom: 2px solid #c0c0c0;
+	position: relative;
+	height: $header-height;
+}
+
+h1 {
+	@include dual-height($header-height);
+	font-family: Comfortaa;
+	display: inline-block;
+	font-size: 26px;
+}
+
+.header__search-box {
+	$height: 30px;
+
+	@include size(180px $height);
+	@include margin(10px null null 20px);
+	position: absolute;
+	left: 0;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	text-align: left;
+	padding-left: 8px;
+	color: #b0b0b0;
+
+	input[type=text] {
+		background-color: #eee;
+		height: $height;
+		line-height: $height;
+		border: 0;
+		font-size: 12px;
+		padding-left: 6px;
+		color: #b0b0b0;
+	}
+}
+
+.header__nav {
+	@include margin(10px 20px null null);
+	position: absolute;
+	right: 0;
+}
+
+.header__nav__item {
+	font-size: 26px;
+	float:left;
+	width: 36px;
+	text-align: center;
+	color: #c0c0c0;
+
+	i {
+		display: inline-block;
+	}
+
+	&.active {
+		color: #333;
+	}
+}
+
+.header__nav__username {
+	float: left;
+	line-height: 30px;
+	font-size: 13px;
+	margin-left: 10px;
+}

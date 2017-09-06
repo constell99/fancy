@@ -1,4 +1,4 @@
-# Facny Example
+# Fancy Example
  Fancy example. It uses react, redux, redux-saga, mongoose library.
 
 ## Requirement
